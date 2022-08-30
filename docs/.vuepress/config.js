@@ -1,5 +1,6 @@
 module.exports = {
     port: 8082,
+    base: '/Frank-Blog-Dist/',
     title: "Frank's Blog",
     description: '让总结成为习惯',
     head: [
@@ -7,7 +8,7 @@ module.exports = {
     ],
     markdown: {
         lineNumbers: true,  // 代码显示行号
-    }, 
+    },
     themeConfig: {
         nav: [
             { text:'首页', link: '/'},
@@ -18,7 +19,7 @@ module.exports = {
                     { text: 'Golang', link: '/golang/' },
                     { text: 'Web', link: '/web/' }
                 ]
-            }, 
+            },
             { text:'关于', link: '/about/'},
             { text: 'Github', link: 'https://www.github.com/meizhaohui' }
         ],
@@ -26,7 +27,7 @@ module.exports = {
             '/python/': [
                 {
                     title: 'Python基础知识',
-                    collapsable: false,  // 是否可折叠，默认可折叠true 
+                    collapsable: false,  // 是否可折叠，默认可折叠true
                     children: [
                         "python1",
                         "python2",
@@ -54,7 +55,7 @@ module.exports = {
                 "web1"
             ],
         },
-        sidebarDepth: 2, // 侧边栏显示深度，默认为1，即显示一级标题 
+        sidebarDepth: 2, // 侧边栏显示深度，默认为1，即显示一级标题
     },
     plugins: [
 	'@vuepress/back-to-top',
