@@ -1,0 +1,20 @@
+{
+  "name": "Frank-Blog",
+  "version": "1.0.0",
+  "description": "Frank's Blog",
+  "main": "index.js",
+  "author": "frank",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-back-to-top": "^2.0.0-beta.50",
+    "@vuepress/plugin-medium-zoom": "^2.0.0-beta.50"
+  },
+  "dependencies": {
+    "vue": "2.7.10",
+    "vue-template-compiler": "^2.7.10"
+  }
+}
